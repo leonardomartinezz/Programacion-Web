@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Ejercicios ✨</title>
+    <title>Mis Ejercicios</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f5f6fa;
-            color: #4a4a4a;
+            background-color: #f8f9fa;
+            color: #333;
             padding: 40px 20px;
             display: flex;
             justify-content: center;
@@ -19,85 +19,80 @@
         .menu-container {
             background: white;
             padding: 35px 30px;
-            border-radius: 20px;
-            box-shadow: 0 8px 24px rgba(146, 125, 193, 0.08);
-            max-width: 440px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            max-width: 420px;
             width: 100%;
-            text-align: center;
         }
         h1 {
-            font-size: 22px;
+            font-size: 20px;
             margin-bottom: 5px;
-            color: #927dc1;
+            color: #2c3e50;
             font-weight: 600;
+            text-align: center;
         }
         .subtitle {
             font-size: 13px;
-            color: #a0a0a0;
-            margin-bottom: 30px;
+            color: #8e9bb0;
+            margin-bottom: 25px;
+            text-align: center;
         }
         .grid-ejercicios {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-bottom: 15px;
+            gap: 8px;
+            margin-bottom: 12px;
         }
         .grid-ejercicios a {
             display: block;
-            padding: 12px;
-            background-color: #f9f8fc;
-            color: #7d7099;
+            padding: 10px;
+            background-color: #fcfcfc;
+            color: #555;
             text-decoration: none;
-            border-radius: 12px;
+            border-radius: 8px;
             font-weight: 500;
-            font-size: 14px;
-            transition: all 0.3s ease;
-            border: 1px solid #f0edf7;
+            font-size: 13px;
+            text-align: center;
+            transition: all 0.2s ease;
+            border: 1px solid #eee;
         }
         .grid-ejercicios a:hover {
-            background-color: #eedffa;
-            color: #6c52a3;
-            border-color: #e2cbf5;
-            transform: translateY(-2px);
+            background-color: #f1f3f5;
+            color: #000;
+            border-color: #ddd;
         }
         .lista-principales {
             list-style: none;
             padding: 0;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 8px;
         }
         .lista-principales a {
             display: block;
-            padding: 14px;
-            background-color: #f3f9fb;
-            color: #49657b;
+            padding: 12px 15px;
+            background-color: #f8f9fa;
+            color: #495057;
             text-decoration: none;
-            border-radius: 12px;
+            border-radius: 8px;
             font-weight: 500;
             font-size: 14px;
-            transition: all 0.3s ease;
-            text-align: left;
-            border: 1px solid #e5f2f5;
+            transition: all 0.2s ease;
+            border: 1px solid #e9ecef;
         }
         .lista-principales a:hover {
-            background-color: #dcf0f5;
-            color: #2b485c;
-            border-color: #cbe6ed;
-            transform: translateX(4px);
-        }
-        .emoji {
-            margin-right: 8px;
+            background-color: #e9ecef;
+            color: #000;
+            border-color: #dee2e6;
         }
     </style>
 </head>
 <body>
 
     <div class="menu-container">
-        <h1>Mis Ejercicios ✨</h1>
-        <p class="subtitle">Programación Web • Proyectos e Instrucciones</p>
+        <h1>Mis Ejercicios</h1>
+        <p class="subtitle">Programación Web • Contenido e Instrucciones</p>
         
-        <!-- Bloque compacto para los primeros ejercicios básicos -->
         <div class="grid-ejercicios">
             <a href="ejercicio1.html">Ex 1</a>
             <a href="ejercicio2.html">Ex 2</a>
@@ -107,28 +102,11 @@
             <a href="ejercicio6.html">Ex 6</a>
         </div>
 
-        <!-- Lista bonita para los ejercicios principales -->
         <ul class="lista-principales">
-            <li>
-                <a href="ejercicio7.html">
-                    <span class="emoji">🌮</span> Ejercicio 7: Receta al Pastor
-                </a>
-            </li>
-            <li>
-                <a href="ejercicio8.html">
-                    <span class="emoji">📅</span> Ejercicio 8: Horario de Clases
-                </a>
-            </li>
-            <li>
-                <a href="ejercicio9.html">
-                    <span class="emoji">✉️</span> Ejercicio 9: Formulario Web
-                </a>
-            </li>
-            <li>
-                <a href="ejercicio10.html">
-                    <span class="emoji">🌡️</span> Ejercicio 10: Conversor JS
-                </a>
-            </li>
+            <li><a href="ejercicio7.html">Ejercicio 7: Receta al Pastor</a></li>
+            <li><a href="ejercicio8.html">Ejercicio 8: Horario de Clases</a></li>
+            <li><a href="ejercicio9.html">Ejercicio 9: Formulario Web</a></li>
+            <li><a href="ejercicio10.html">Ejercicio 10: Conversor JS</a></li>
         </ul>
     </div>
 
