@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura | JS</title>
+    <link rel="stylesheet" href="css/ejercicio10.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="contenedor-conversor">
+        <h1>Conversor de Temperatura</h1>
+        <p class="subtitulo">Transforma grados Celsius a Fahrenheit al instante</p>
+
+        <div class="grupo-formulario">
+            <label for="celsius">Grados Celsius (°C)</label>
+            <input type="text" id="celsius" placeholder="Ej: 25">
+            <div id="error" class="error-mensaje">Por favor, ingresa un número válido.</div>
+        </div>
+
+        <div class="grupo-formulario">
+            <label for="fahrenheit">Resultado en Fahrenheit (°F)</label>
+            <input type="text" id="fahrenheit" readonly placeholder="Resultado aquí...">
+        </div>
+
+        <button type="button" class="boton-convertir" id="btnConvertir">Convertir</button>
+    </div>
+
+    <script>
+        document.getElementById('btnConvertir').addEventListener('click', function() {
+            const inputCelsius = document.getElementById('celsius');
+            const inputFahrenheit = document.getElementById('fahrenheit');
+            const errorMensaje = document.getElementById('error');
+            
+            const valorCelsius = inputCelsius.value.trim();
+
+            if (valorCelsius === '' || isNaN(valorCelsius)) {
+                errorMensaje.style.display = 'block';
+                inputFahrenheit.value = '';
+                return;
+            }
+
+            errorMensaje.style.display = 'none';
+
+            const celsius = parseFloat(valorCelsius);
+            const fahrenheit = (celsius * 9 / 5) + 32;
+
+            inputFahrenheit.value = fahrenheit.toFixed(1) + ' °F';
+        });
+    </script>
+
+</body>
+</html>
