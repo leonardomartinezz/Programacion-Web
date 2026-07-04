@@ -59,7 +59,7 @@ input {
 
 input[readonly] {
     background-color: #f1f1f1;
-    color: #555;
+    color: #000000;
     cursor: not-allowed;
 }
 
