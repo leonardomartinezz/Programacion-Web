@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12 </title>
+    <link rel="stylesheet" href="css/ejercicio11.css">
+</head>
+<body>
+
+    <div class="contenedor-conversor">
+        <h1>Conversor de Pesos (Mx) a Dólares (Dlls)</h1>
+        <p class="subtitulo">Transforma Pesos mx a Dólares</p>
+
+        <div class="grupo-formulario">
+            <label for="pesos">Pesos (Mx):</label>
+            <input type="number" id="pesos" placeholder="Ej: 25" required min=1>
+            <div id="error" class="error-mensaje">Por favor, ingresa un número válido.</div>
+        </div>
+
+        <div class="grupo-formulario">
+            <label for="dolares">Resultado en Dólares (mi):</label>
+            <input type="text" id="dolares" readonly placeholder="Resultado aquí...">
+        </div>
+
+        <button type="button" class="boton-convertir" id="btnConvertir">Convertir</button>
+    </div>
+
+    <script src="js/ejercicio12.js"></script>
+
+</body>
+</html>

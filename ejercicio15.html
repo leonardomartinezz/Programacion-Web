@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 - Control de Estudiantes</title>
+    <link rel="stylesheet" href="css/ejercicio11.css">
+</head>
+<body>
+
+    <div class="contenedor-conversor">
+        <h1>Control de Estudiantes</h1>
+        <p class="subtitulo">Registro de calificaciones y estadísticas</p>
+
+        <div class="grupo-formulario">
+            <label for="nombre">Nombre del Estudiante:</label>
+            <input type="text" id="nombre" placeholder="Ej. Juan">
+        </div>
+
+        <div class="grupo-formulario">
+            <label for="calificacion">Calificación:</label>
+            <input type="number" id="calificacion" placeholder="Ej. 85" min="0" max="100">
+            <div id="error" class="error-mensaje">Por favor, ingresa un nombre y una calificación válida.</div>
+        </div>
+
+        <div class="grupo-formulario">
+            <button id="btnAgregar" class="boton-convertir" style="margin-bottom: 10px; background-color: #2ecc71;">Agregar estudiante</button>
+            <button id="btnCalcular" class="boton-convertir">Calcular</button>
+        </div>
+
+        <div class="grupo-formulario">
+            <label>Estudiantes agregados (<span id="contador">0</span>):</label>
+            <ul id="listaEstudiantes" style="font-size: 13px; padding-left: 20px; color: #555; max-height: 80px; overflow-y: auto;"></ul>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #eaeaea; margin-bottom: 20px;">
+
+        <div class="grupo-formulario">
+            <label for="promedio">Calificación promedio:</label>
+            <input type="text" id="promedio" readonly>
+        </div>
+
+        <div class="grupo-formulario">
+            <label for="maxima">Calificación más alta:</label>
+            <input type="text" id="maxima" readonly>
+        </div>
+
+        <div class="grupo-formulario">
+            <label for="minima">Calificación más baja:</label>
+            <input type="text" id="minima" readonly>
+        </div>
+    </div>
+
+    <script src="js/ejercicio15.js"></script>
+</body>
+</html>

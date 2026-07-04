@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 - Análisis de Números</title>
+    <link rel="stylesheet" href="css/ejercicio11.css">
+</head>
+<body>
+
+    <div class="contenedor-conversor">
+        <h1>Análisis de Números</h1>
+        <p class="subtitulo">Operaciones estadísticas con arreglos</p>
+
+        <div class="grupo-formulario">
+            <label for="inputNumeros">Ingresa números separados por comas:</label>
+            <input type="text" id="inputNumeros" placeholder="Ej. 10, 20, 30, 40, 50">
+            <div id="error" class="error-mensaje">Por favor, ingresa una lista válida de números separados por comas.</div>
+        </div>
+
+        <div class="grupo-formulario">
+            <button id="btnCalcular" class="boton-convertir">Calcular</button>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #eaeaea; margin-bottom: 20px;">
+
+        <div class="grupo-formulario">
+            <label for="mayor">Número mayor:</label>
+            <input type="text" id="mayor" readonly>
+        </div>
+
+        <div class="grupo-formulario">
+            <label for="menor">Número menor:</label>
+            <input type="text" id="menor" readonly>
+        </div>
+
+        <div class="grupo-formulario">
+            <label for="promedio">Promedio:</label>
+            <input type="text" id="promedio" readonly>
+        </div>
+    </div>
+
+    <script src="js/ejercicio14.js"></script>
+</body>
+</html>
