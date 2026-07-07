@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web - Funciones Flecha</title>
+    <!-- Tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/ejercicio11.css">
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <div class="contenedor-conversor">
+        <h1>Calculadora Web</h1>
+        <p class="subtitulo">Operaciones básicas con funciones flecha</p>
+        
+        <form id="calculatorForm" onsubmit="event.preventDefault();">
+            <!-- Primer Número -->
+            <div class="grupo-formulario">
+                <label for="numero1">Número 1</label>
+                <input type="text" id="numero1" placeholder="Ej. 10">
+                <!-- Mensaje de error para el input 1 -->
+                <div id="error-num1" class="error-mensaje">Por favor, ingresa un número válido.</div>
+            </div>
+
+            <!-- Segundo Número -->
+            <div class="grupo-formulario">
+                <label for="numero2">Número 2</label>
+                <input type="text" id="numero2" placeholder="Ej. 5">
+                <!-- Mensaje de error para el input 2 -->
+                <div id="error-num2" class="error-mensaje">Por favor, ingresa un número válido.</div>
+            </div>
+
+            <!-- Botones de Operación -->
+            <div class="grupo-formulario" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;">
+                <button type="button" class="boton-convertir" onclick="calcularOperacion('suma')">+</button>
+                <button type="button" class="boton-convertir" onclick="calcularOperacion('resta')">-</button>
+                <button type="button" class="boton-convertir" onclick="calcularOperacion('multiplicacion')">×</button>
+                <button type="button" class="boton-convertir" onclick="calcularOperacion('division')">÷</button>
+            </div>
+
+            <!-- Caja de Texto del Resultado -->
+            <div class="grupo-formulario">
+                <label for="resultado">Resultado</label>
+                <input type="text" id="resultado" readonly placeholder="Esperando operación...">
+            </div>
+        </form>
+    </div>
+
+    <!-- Tu lógica en JS -->
+    <script src="js/ejercicio16.js"></script>
+</body>
+</html>

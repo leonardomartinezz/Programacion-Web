@@ -64,8 +64,8 @@ input[readonly] {
 }
 
 .boton-convertir {
-    background-color: #3498db;
-    color: white;
+    background-color: #d664ed;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 12px;
     border-radius: 4px;
